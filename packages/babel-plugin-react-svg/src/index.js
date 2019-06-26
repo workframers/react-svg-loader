@@ -150,12 +150,14 @@ export default function(babel: BabelCore) {
   const programVisitor = {
     Program(path: any) {
       // add import react statement
+      /*
       path.node.body.unshift(
         t.importDeclaration(
           [t.importDefaultSpecifier(t.identifier("React"))],
           t.stringLiteral("react")
         )
       );
+      */
     }
   };
 
